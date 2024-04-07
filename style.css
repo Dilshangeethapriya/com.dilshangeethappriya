@@ -1,0 +1,146 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #456679;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+}
+
+.navbar {
+  height: 4rem;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  transition: 1s ease;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+
+}
+
+ul > li  {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-right: 20px ;
+}
+
+ul > li > a {
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 1.4rem;
+   font-family: sans-serif;
+}
+
+.hide {
+  transform: translateY(-100px) ;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  cursor: auto;
+}
+
+.center > button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background: #13aaff;
+  cursor: pointer;
+}
+
+.colorchange {
+  background-color: #aa8888;
+}
+
+canvas {
+  position: relative;
+
+}
+
+.about {
+  background-color: #0F1518;
+}
+
+
+/* ------------  CONTACT SECTION-------- */
+
+.contact {
+  background-color: #0f0f0f;
+  color: #c5c3d6;
+}
+
+.contact > h1 {
+  padding-top: 40px;
+  padding-left: 20px;
+  font-size: 40px;
+  
+}
+
+.contact-form {
+  margin: 5% auto;
+  width: 60%;
+  height: 70% ;
+  background: rgba(33, 50, 59, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+.contact-form > form {
+  text-align: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.contact-form > form > h2 {
+  margin-bottom: 15px;
+  color: #d8d8d8 ;
+  font-size: 2rem;
+}
+
+.contact-form > form > input,textarea,button {
+  font-size: 16px;
+  background-color: #0F1518;
+  border: none;
+  color: #d8d8d8 ;
+}
+.contact-form > form > input,textarea {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.contact-form > form > button {
+   width: 20%;
+   cursor: pointer;
+   margin: 20px auto;
+   border-radius: 25px;
+   padding: 15px;
+   width: 40%;
+   font-size: 20px;
+}
