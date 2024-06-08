@@ -5,19 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Vite App</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contacts</a></li>
-    </ul>
-    </nav>
+    <header class="header">
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon" ></i>
+      </label>
+      <nav class="navbar">
+        <a href="#home" style="--i:0;">Home</a>
+        <a href="#about" style="--i:1;">About</a>
+        <a href="#projects" style="--i:2;">Projects</a>
+        <a href="#contact" style="--i:3;">Contacts</a>
+      
+      </nav>
+    </header>
+    
      <section class="home colorchange" id="home">
-      <canvas name="parallax" id="parallax"></canvas>
+      <canvas class="parallax" name="parallax" id="parallax"></canvas>
+      <div class="mb-background">
+        <h1 class="hi">Hi,</h1>
+        <h1 class="my-name">My name is Dilshan</h1>
+        <p>I love creating user-friendly and visually stunning web experiences..</p>
+        <button class="get-in-touch" onclick="window.location.href = '#contact';">Get in touch</button>
+      </div>
     </section>
    <section class="about" id="about">
       <h1>about</h1>
@@ -29,7 +43,7 @@
      <section class="contact" id="contact">
       <h1>LET'S GET IN TOUCH</h1>
       <div class="contact-form" id="contact-form">
-        <form onsubmit="sendEmail()" id="contact-form">
+        <form  id="contact-form">
            <h2>Contact</h2>
           <input type="text" name="name" id="name" placeholder="Your Name"/>
           <input type="email" name="email" id="email" placeholder="Your Email Address" />
@@ -42,5 +56,6 @@
     </section>
     
     <script type="module" src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

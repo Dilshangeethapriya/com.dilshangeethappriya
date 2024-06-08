@@ -8,43 +8,71 @@
 body {
   background-color: #456679;
   scroll-behavior: smooth;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 section {
   position: relative;
   height: 100vh;
+  width: 100vw;
 }
 
-.navbar {
-  height: 4rem;
-  width: 100%;
-  background-color: transparent;
+.header {
   position: fixed;
-  transition: 1s ease;
-  z-index: 100;
-}
-
-.navbar ul {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  z-index: 100;
+  transition: .3s ease;
+}
+
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  z-index: -1;
+}
+
+.navbar{
   float: right;
-
 }
 
-ul > li  {
-  list-style: none;
+.navbar a {
+  font-size: 1.3rem;
+  color: white;
   text-decoration: none;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-right: 20px ;
+  
+  font-weight: 500;
+  padding-right: 1rem;
 }
 
-ul > li > a {
-   text-decoration: none;
-   color: #ffffff;
-   font-size: 1.4rem;
-   font-family: sans-serif;
+
+
+
+ a:hover {
+   color: rgb(235, 132, 23);
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  
+  position: absolute;
+  font-size: 2.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  top: 30%;
 }
 
 .hide {
@@ -75,6 +103,15 @@ canvas {
   position: relative;
 
 }
+
+.mb-background{
+  display: none;
+}
+
+.home{
+  overflow: hidden;
+}
+
 
 .about {
   background-color: #0F1518;
@@ -143,4 +180,131 @@ canvas {
    padding: 15px;
    width: 40%;
    font-size: 20px;
+}
+
+
+/* Break Points*/
+
+@media only screen and (max-width: 920px) {
+
+  .icons {
+   display: block; 
+   
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 160%;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar {
+    height: 15.5rem;
+  }
+  
+
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    padding-right: 2rem ;
+    transform: translateY(-50px);
+    transition: .3s ease;
+  }
+  
+  #check:checked~.navbar a {
+    transform: translateY(0);
+    transition-delay: calc(.03s * var(--i));
+  }
+
+  canvas{
+    display: none;
+  }
+
+
+  .mb-background{
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./src/canvas1/mobileBackground1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d8d8d8;
+   
+  }
+
+  .mb-background > h1 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+
+  .mb-background > .hi {
+    padding-top: 20vh;
+    padding-left: 10vw;
+  }
+  .mb-background > .my-name {
+    padding-top: 5px;
+    padding-left: 10vw;
+  }
+
+  .mb-background > p {
+    font-size: 1.2rem;
+    padding-top: 10vh;
+    padding-left: 10vw;
+  }
+
+  .get-in-touch{
+    margin-top: 10vh;
+    padding: 10px;
+    background-color: rgb(235, 132, 23);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 10vh;
+  }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 425px) {
+  canvas{
+    display: none;
+  }
+
+  
+
+  .mb-background{
+    position: absolute;
+    display: initial;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./src/canvas1/mobileBackground2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
