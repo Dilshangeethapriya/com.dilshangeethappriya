@@ -16,14 +16,16 @@ let ctx = canvas.getContext("2d");
 console.log(ctx);
 // creating image objects for each paralaxx layers
 const img1 = new Image();
-img1.src = "./src/canvas1/background.png";
+img1.src = ".././src/assets/images/background.png";
+
 const img2 = new Image();
-img2.src = "./src/canvas1/astronout.png";
+img2.src = ".././src/assets/images/astronout.png";
+
 const img3 = new Image();
-img3.src = "./src/canvas1/grass.png";
+img3.src = ".././src/assets/images/grass.png";
 
 const btnImg = new Image();
-btnImg.src = "./src/canvas1/btn1.png";
+btnImg.src = ".././src/assets/images/btn1.png";
 
 window.onload = () => {
   // class to create a text layer  ----------------------

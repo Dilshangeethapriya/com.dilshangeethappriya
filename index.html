@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Vite App</title>
+    <title>Dilshan Geethappriya</title>
+    <link rel="icon" type="image/x-icon" href="./src/assets/images/logo.ico">
   </head>
   <body>
     <header class="header">
@@ -32,13 +32,83 @@
         <p>I love creating user-friendly and visually stunning web experiences..</p>
         <button class="get-in-touch" onclick="window.location.href = '#contact';">Get in touch</button>
       </div>
+   
     </section>
    <section class="about" id="about">
-      <h1>about</h1>
+      <h1>About </h1>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./src/assets/images/profile.jpg" alt="profile.img">
+            <ul>
+              <li><span>Name : </span> DIlshan Geethappriya </li>
+              <li><span>Age : </span> 26</li>
+              <li><span>Email : </span> dilshan.geethapriya98@gmail.com</li>
+              <li><span>Address : </span>Padiyathalawa, Srilanka, 32100</li>
+            </ul>
+           
+          </div>
+          <div class="about-col-2">
+              <p class="about-details">
+                I am a  motivated and eager individual with a passion for web development. Possessing strong foundations in programming actively seeking hands-on learning opportunities to further develop my expertise. Excellent communication and collaboration skills, ready to contribute my fresh perspective and enthusiasm to a team environment. Seeking a challenging Web developer role where I can learn from experienced professionals and contribute meaningfully to innovative projects.
+              </p>
+              <div class="tab-list">
+                <p class="tab-link active-link" >Skills</p>
+                <p class="tab-link"  >Experiance</p>
+                <p class="tab-link" >Education</p>
+              </div>
+              <div class="tab-body active-tab" id="skills">
+                  <ul>
+                    <li><span>Frontend</span><br> ReactJS, JavaScript, html, css </li>
+                    <li><span>Backend</span><br> NodeJS , MySQL ,  PHP </li>
+                    <li><span>Other</span><br> Java, 
+                      Git,
+                      AzureDevops,
+                      Azure Databricks, 
+                      Blender(3D Modeling),
+                      Adobe Ilastrator,
+                      Splunk </li>
+                  </ul>
+              </div>
+              <div class="tab-body" id="experiance">
+                <ul>
+                  <li><span >Trainee Software Analyst</span><br><span class="place">Arithmos (Pvt) Ltd </span> <br> As parts of the Production Support Team that was working in a Agile working environment, I was tasked to monitor ETT's and , Do functional and comparison testing on ETL's, Work with Azure devops and databricks to teat applications, Create analysis reports based on the testing results.
+      
+                  </li>
+                  
+                </ul>
+            </div>
+            <div class="tab-body" id="education">
+              <ul>
+                <li><span >BSc(Hons) Computer Science & Software Engineering</span><br><span class="place">SLIIT ACADAMY (UNIVERSITY OF BEDFORDSHIRE) | 2019 - present</span> Kolluitiya,Srilanka
+                </li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+   
     <section class="projects" id="projects">
-      <h1>projects</h1>
+      <h1>Projects</h1>
+       <div class="projects-list">
+        <a href="https://silver-hamster-7788bc.netlify.app/" target="_blank">
+          <div class="project">
+            <img src="./src/assets/images/projects/weatherApp.png" alt="WeatherApp.img">
+            <p class="title">Weather App</p>
+            <p class="techStack">React.js, JavaScript, API integration, CSS</p>
+            <p class="description">Userfriendly app to get your weather information</p>
+        </div>
+        </a>
+        <a href="https://dilshangeethappriya.netlify.app/" target="_blank"><div class="project">
+          <img src="./src/assets/images/projects/portfolio.png" alt="WeatherApp.img">
+          <p class="title">Portfolio</p>
+          <p class="techStack"> JavaScript, HTML, CSS, HTML Canvas</p>
+          <p class="description">My portfolio web site</p>
+      </div></a>
+        
+        
+        
     </section>
      <section class="contact" id="contact">
       <h1>LET'S GET IN TOUCH</h1>
@@ -51,9 +121,21 @@
           <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
           <button type="submit" name="submit" id="submit">Send</button>
         </form>
+     
+        
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/dilshan-geethappriya-b30530200/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Dilshangeethapriya" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/dilshangeethapriya/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://web.facebook.com/dilshan.geethapriya/" target="_blank"> <i class='bx bxl-facebook' ></i></a>
       </div>
       
     </section>
+
+    <footer>
+      <p class="copyrights">&copy;Dilshan Geethappriya </p>
+    </footer>
     
     <script type="module" src="/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

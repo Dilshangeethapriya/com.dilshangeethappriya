@@ -5,6 +5,27 @@ import "https://smtpjs.com/v3/smtp.js";
 const btn = document.querySelector("button");
 const sections = document.querySelectorAll("section");
 
+// --------------- About section -------------
+let tabLinks = document.getElementsByClassName("tab-link");
+let tabBody = document.getElementsByClassName("tab-body");
+function opentab(tabName) {
+  for (const link of tabLinks) {
+    link.classList.remove("active-link");
+  }
+  for (const body of tabBody) {
+    body.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabName).classList.add("active-tab");
+}
+
+for (const link of tabLinks) {
+  link.addEventListener("click", function () {
+    const tabName = this.textContent.trim(); // Get the tab name from the clicked link
+    opentab(tabName.toLowerCase());
+  });
+}
+
 // --------------- contact form submit --------------
 
 const contactForm = document.getElementById("contact-form");
@@ -55,7 +76,7 @@ function authForm() {
   const inputs = contactForm.querySelectorAll("input, textarea");
 
   if (name === "" || email === "" || contactNumber === "" || message == "") {
-    console.log(`Please fill out all the fields before submitting!`);
+    alert(`Please fill out all the fields before submitting!`);
   } else {
     sendEmail(name, email, contactNumber, message);
   }

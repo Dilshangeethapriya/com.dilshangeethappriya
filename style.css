@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #456679;
   scroll-behavior: smooth;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 section {
+  background-color: #0F1518;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -49,7 +49,7 @@ section {
   font-size: 1.3rem;
   color: white;
   text-decoration: none;
-  
+  backdrop-filter: blur(50px);
   font-weight: 500;
   padding-right: 1rem;
 }
@@ -113,36 +113,186 @@ canvas {
 }
 
 
+/* ////// about me section //////// */
+
 .about {
-  background-color: #0F1518;
+  color: #bdbdbd ;
+}
+
+.about h1 {
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+.about > .container > .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+.about-col-1 {
+  flex-basis: 30%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 40px;
+  top : -10;
+}
+.about-col-1 ul li {
+  padding: 0.5rem ;
+  margin: 2rem 3rem;
+  width: 100%;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.about-col-1 ul li span{
+  color: rgb(235, 132, 23);
 }
 
 
-/* ------------  CONTACT SECTION-------- */
+.about-col-2 {
+  flex-basis: 55%;
+  font-size: 1.1rem;
+}
+
+
+.about-col-2  p{
+  width: 100%;
+}
+
+.tab-list{
+  display: flex;
+  margin: 30px 0 30px;
+  
+}
+
+.tab-link {
+  margin-right: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.tab-link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #bdbdbd;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-link.active-link::after{
+  width: 50%;
+}
+
+.tab-body ul li{
+
+   list-style: none;
+   margin: 10px 0;
+}
+
+.tab-body ul li span{
+  color: rgb(235, 132, 23);
+}
+
+.tab-body ul li .place{
+  color: rgb(57, 192, 255);
+}
+.tab-body {
+  display: none;
+}
+
+.tab-body.active-tab{
+  display: block;
+}
+
+/* /////////////   Projects section ///////// */
+.projects {
+  color: #bdbdbd ;
+}
+
+.projects-list {
+  margin: 10%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-list a{
+  text-decoration: none;
+  color: unset;
+}
+
+.project{
+  flex-basis: 40%;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(33, 50, 59, 0.5);
+  border-radius: 1rem;
+}
+
+
+.project img {
+  width : 100%;
+}
+.project .title {
+  font-size: 1.5rem;
+  color:rgb(235, 132, 23); 
+}
+
+.project .techStack {
+  font-size: 1rem;
+  color: rgb(57, 192, 255);
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.projects h1 {
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 45px;
+  font-weight: lighter;
+}
+/* ////////////  CONTACT SECTION /////////// */
 
 .contact {
-  background-color: #0f0f0f;
-  color: #c5c3d6;
+  color: #bdbdbd;
 }
 
 .contact > h1 {
+  margin: auto;
+  text-align: center;
   padding-top: 40px;
-  padding-left: 20px;
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: lighter;
   
 }
 
 .contact-form {
   margin: 5% auto;
   width: 60%;
-  height: 70% ;
+  height: 80% ;
   background: rgba(33, 50, 59, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
   max-width: 700px;
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .contact-form > form {
@@ -156,15 +306,16 @@ canvas {
 
 .contact-form > form > h2 {
   margin-bottom: 15px;
-  color: #d8d8d8 ;
+  color: #bdbdbd ;
   font-size: 2rem;
+  font-weight: lighter;
 }
 
 .contact-form > form > input,textarea,button {
   font-size: 16px;
   background-color: #0F1518;
   border: none;
-  color: #d8d8d8 ;
+  color: #bdbdbd ;
 }
 .contact-form > form > input,textarea {
   width: 100%;
@@ -182,8 +333,45 @@ canvas {
    font-size: 20px;
 }
 
+.social {
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
 
-/* Break Points*/
+.social i{
+  padding: 1rem;
+}
+
+.social a{
+  text-decoration: none;
+  color: unset;
+}
+
+.social a:hover{
+  color: rgb(235, 132, 23);
+}
+
+/* ///////// Footer //////// */
+
+footer {
+  background-color: #0F1518;
+  position: relative;
+  width: 100%;
+  height: 10%;
+  color: #bdbdbd;
+  padding: 10px;
+}
+
+footer .copyrights {
+   text-align: center;
+}
+
+
+/*   //////////////  Break Points ///////////*/ 
 
 @media only screen and (max-width: 920px) {
 
@@ -246,7 +434,7 @@ canvas {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-image: url(./src/canvas1/mobileBackground1.png);
+    background-image: url(./src/assets/images/mobileBackground1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -303,7 +491,7 @@ canvas {
     display: initial;
     width: 100vw;
     height: 100vh;
-    background-image: url(./src/canvas1/mobileBackground2.png);
+    background-image: url(./src/assets/images/mobileBackground2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
