@@ -139,7 +139,7 @@ canvas {
 }
 
 .about-col-1 img{
-  width: 100%;
+  width: 60%;
   border-radius: 40px;
   top : -10;
 }
@@ -283,19 +283,22 @@ canvas {
 }
 
 .contact-form {
-  margin: 5% auto;
-  width: 60%;
+  position: relative;
+  width: 100%;
   height: 80% ;
-  background: rgba(33, 50, 59, 0.5);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 1rem;
-  max-width: 700px;
-  max-height: 600px;
+ padding: 5px;
 }
 
-.contact-form > form {
+.message-form{
+  position: relative;
+  flex-basis: 50%;
+  height: 70%;
+}
+
+.contact-form >.message-form > form {
   text-align: center;
   width: 90%;
   display: flex;
@@ -304,26 +307,27 @@ canvas {
   max-width: 600px;
 }
 
-.contact-form > form > h2 {
+.contact-form> .message-form > form > h2 {
   margin-bottom: 15px;
   color: #bdbdbd ;
   font-size: 2rem;
   font-weight: lighter;
 }
 
-.contact-form > form > input,textarea,button {
+.contact-form > .message-form > form > input,textarea,button {
   font-size: 16px;
-  background-color: #0F1518;
+  background-color: #bdbdbd;
   border: none;
   color: #bdbdbd ;
+  border-radius: 20px;
 }
-.contact-form > form > input,textarea {
+.contact-form > .message-form > form > input,textarea {
   width: 100%;
   margin: 5px;
   padding: 10px;
 }
 
-.contact-form > form > button {
+.contact-form > .message-form > form > button {
    width: 20%;
    cursor: pointer;
    margin: 20px auto;
@@ -331,11 +335,50 @@ canvas {
    padding: 15px;
    width: 40%;
    font-size: 20px;
+   background-color: rgb(235, 132, 23) ;
 }
+
+.contact-info{
+  flex-basis: 50%;
+  height: 70%;
+}
+
+.contact-info > li {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contact-info >li > p {
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+.contact-info >li > i {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  color: rgb(235, 132, 23);
+}
+
+.cv-btn {
+  background-color:  rgb(235, 132, 23);
+  width: 40%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.cv-btn > a {
+  text-decoration: none;
+  color: unset;
+}
+
 
 .social {
   font-size: 30px;
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
