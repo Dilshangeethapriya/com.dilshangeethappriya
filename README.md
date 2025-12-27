@@ -78,6 +78,6 @@ Contributions are welcome!
 
 - Website: dilshangeethappriya.netlify.app
 
-- GitHub: github.com/your-Dilshangeethapriya
+- GitHub: github.com/Dilshangeethapriya
 
-- Email: your-email@example.com
+- Email: dilshan.geethapriya98@gmail.com
