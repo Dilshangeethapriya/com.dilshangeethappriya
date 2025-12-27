@@ -32,21 +32,23 @@ Check it live here: [https://dilshangeethappriya.netlify.app](https://dilshangee
 
 ## 📂 Installation
 
-1. Clone the repo:
+### 1. Clone the repo:
 
-   ```bash
-   git clone https://github.com/Dilshangeethapriya/com.dilshangeethappriya.git
+```bash
+git clone https://github.com/Dilshangeethapriya/com.dilshangeethappriya.git
 
-   ```
+```
 
-2. Open index.html in your browser:
+### 2. Open index.html in your browser:
 
 open index.html # Mac
 start index.html # Windows
 
-No dependencies required — works on any modern browser!
+#### `No dependencies required — works on any modern browser!`
 
-🛠️ Built With
+---
+
+## 🛠️ Built With
 
 HTML5 – Semantic structure
 
@@ -54,24 +56,28 @@ CSS3 – Flexbox, Grid, Animations
 
 JavaScript (ES6) – DOM manipulation, events
 
-✨ Contributing
+---
+
+## ✨ Contributing
 
 Contributions are welcome!
 
-Fork the repo
+1. Fork the repo
 
-Create a branch (git checkout -b feature-name)
+2. Create a branch (git checkout -b feature-name)
 
-Make changes and commit (git commit -m 'Add feature')
+3. Make changes and commit (git commit -m 'Add feature')
 
-Push to branch (git push origin feature-name)
+4. Push to branch (git push origin feature-name)
 
-Open a Pull Request
+5. Open a Pull Request
 
-📫 Contact
+---
 
-Website: dilshangeethappriya.netlify.app
+## 📫 Contact
 
-GitHub: github.com/your-Dilshangeethapriya
+- Website: dilshangeethappriya.netlify.app
 
-Email: your-email@example.com
+- GitHub: github.com/your-Dilshangeethapriya
+
+- Email: your-email@example.com
